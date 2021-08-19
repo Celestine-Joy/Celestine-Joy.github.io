@@ -4,11 +4,14 @@
      box-sizing: border-box;
      text-decoration: none;
 }
+html {
+    scroll-behavior: smooth;
+  }
 header
 { padding: 0;
     width: 100%;
     position:fixed;
-    font-family:'Ubuntu',"sans-serif";
+    font-family:Arial, Helvetica, sans-serif;
     background-color: rgb(221, 22, 8);
     padding-bottom: 10px;
 }
@@ -16,6 +19,7 @@ header
     color:#fff;
     font-size: 30px;
 }
+
 .navbar{
     max-width: 1300px;
     padding: 0 80px;
@@ -38,30 +42,51 @@ header
 {
     background-color: #fff;
     width: 100%;
+
 }
+
 .Intro
 {
+    color: #fff;
+    cursor:pointer;
     padding:40px;
     padding-top: 100px;
-    padding-bottom: 100%;
     align-items: center;
+    height: 100vh;
+    
     background-color: #000000;
 }
+.intro_msg{
+    color: #fff;
+    padding: 30px;
+   font-size: 40px;
+   display: inline;
+   font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    
+}
+.welcome_msg:hover {
+    font-size: 45px;
+    transition: 0.5s;
+    color: rgb(26, 201, 224);
+    
+    
+}
 
+.name_intro_name{
+    font-size: 100px;
+    display: flex;
+}
 
+.name_intro{
+    padding: 30px;
+}
 .intro_image {
-    width: 10px;
-    height: 10px;
     margin: 3px;
-    padding: 3px;
+   
+    float: right;
 }
 .intro_image1 {
-    width: 30px;
-    height: 30px;
+    width: 200px;
+    height: 200px;
 }
-.intro_msg{
-    color: #000000;
-    padding: 30px;
-    opacity: 35%; 
-    background-color: #fff;
-}
+
