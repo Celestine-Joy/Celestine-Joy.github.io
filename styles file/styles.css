@@ -10,6 +10,7 @@ header
     position:fixed;
     font-family:'Ubuntu',"sans-serif";
     background-color: rgb(221, 22, 8);
+    padding-bottom: 10px;
 }
 .Name a{
     color:#fff;
@@ -19,9 +20,48 @@ header
     max-width: 1300px;
     padding: 0 80px;
     margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
 }
+
+
 .nav_options li{
     list-style: none;
-    position: left;
+    padding: 10px;
     display: inline-block;
+}
+.nav_options li a{
+    color: #fff;
+}
+.hero
+{
+    background-color: #fff;
+    width: 100%;
+}
+.Intro
+{
+    padding:40px;
+    padding-top: 100px;
+    padding-bottom: 100%;
+    align-items: center;
+    background-color: #000000;
+}
+
+
+.intro_image {
+    width: 10px;
+    height: 10px;
+    margin: 3px;
+    padding: 3px;
+}
+.intro_image1 {
+    width: 30px;
+    height: 30px;
+}
+.intro_msg{
+    color: #000000;
+    padding: 30px;
+    opacity: 35%; 
+    background-color: #fff;
 }
