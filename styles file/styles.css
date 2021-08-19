@@ -10,3 +10,6 @@ header
     border: none;
 background-color: aquamarine;
 }
+.nav_options{
+    align-items: left;
+}
