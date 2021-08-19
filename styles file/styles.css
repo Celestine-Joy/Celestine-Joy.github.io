@@ -1,0 +1,12 @@
+*{
+    padding: 0;
+    border: 0;
+     box-sizing: border-box;
+     text-decoration: none;
+}
+header
+{ padding: 0;
+    width: 100%;
+    border: none;
+background-color: aquamarine;
+}
