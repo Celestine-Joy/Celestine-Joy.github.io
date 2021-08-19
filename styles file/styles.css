@@ -1,15 +1,27 @@
 *{
     padding: 0;
-    border: 0;
+    margin:0;
      box-sizing: border-box;
      text-decoration: none;
 }
 header
 { padding: 0;
     width: 100%;
-    border: none;
-background-color: aquamarine;
+    position:fixed;
+    font-family:'Ubuntu',"sans-serif";
+    background-color: rgb(221, 22, 8);
 }
-.nav_options{
-    align-items: left;
+.Name a{
+    color:#fff;
+    font-size: 30px;
+}
+.navbar{
+    max-width: 1300px;
+    padding: 0 80px;
+    margin: auto;
+}
+.nav_options li{
+    list-style: none;
+    position: left;
+    display: inline-block;
 }
