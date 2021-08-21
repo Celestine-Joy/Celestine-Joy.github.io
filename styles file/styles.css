@@ -23,6 +23,7 @@ header
     padding: 0 80px;
     margin: auto;
     display: flex;
+    
     align-items: center;
     justify-content: space-between;
 }
@@ -49,16 +50,18 @@ header
     float: left;
     color: #fff;
     cursor:default;
-    padding:40px;
     padding-top: 100px;
     align-items: center;
     height: 100vh;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
    
 }
+.container{
+    float: left;
+}
 .intro_msg{
     color: #fff;
-    padding: 30px;
+    padding-left: 40px;
     font-size: 40px;
     display: inline;
        
@@ -70,26 +73,22 @@ header
     
     
 }
-/*.intro_to_name{
-    
-}*/
+.intro_to_name{
+padding: 60px;    
+}
 .name_intro_name{
-   
     float: left;
     font-size: 100px;
     display: flex;
 }
 
 .name_intro{
+    padding-top: 60px;
+}  
 
-    padding-top: 30px;
-}
-.intro_image {
-    margin: 3px;
-    
-}
+
 .intro_image1 {
-    float: right;
+    
     width: 200px;
     height: 200px;
 
@@ -107,4 +106,20 @@ header
     padding:  60px; 
     color:#fff;
     background-color: rgb(189, 22, 22);
+}
+footer{
+    height: 10px;
+    width: 100%;
+}
+
+.social{
+    padding-top: 5;
+    display: flex;
+  justify-content: center;
+    
+}
+
+.social a{  
+    
+    padding: 5px;
 }
