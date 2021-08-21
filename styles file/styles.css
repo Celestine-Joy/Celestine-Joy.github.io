@@ -53,11 +53,11 @@ header
     padding-top: 100px;
     height: 100vh;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-    display: flexbox;
+    display: flex;
 }
 .container{
     float: left;
-    margin-right: 300px;
+    margin-right: 20px;
 }
 .intro_msg{
     color: #fff;
@@ -74,17 +74,16 @@ header
 }
 .intro_to_name{
 padding-left: 60px;    
-}
-.name_intro_name{
-    float: left;
+padding-top: 40px;
+float: left;
     font-size: 100px;
-    
 }
 
 .name_intro{
     padding-top: 60px;
 }  
 .intro_image{
+    padding-top: 90px;
     height: 200px;
     width: 200px;
     float:right;
