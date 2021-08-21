@@ -51,19 +51,18 @@ header
     color: #fff;
     cursor:default;
     padding-top: 100px;
-    align-items: center;
     height: 100vh;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-   
+    display: flexbox;
 }
 .container{
     float: left;
+    margin-right: 300px;
 }
 .intro_msg{
     color: #fff;
     padding-left: 40px;
     font-size: 40px;
-    display: inline;
        
 }
 .welcome_msg:hover {
@@ -74,18 +73,22 @@ header
     
 }
 .intro_to_name{
-padding: 60px;    
+padding-left: 60px;    
 }
 .name_intro_name{
     float: left;
     font-size: 100px;
-    display: flex;
+    
 }
 
 .name_intro{
     padding-top: 60px;
 }  
-
+.intro_image{
+    height: 200px;
+    width: 200px;
+    float:right;
+}
 
 .intro_image1 {
     
@@ -94,6 +97,7 @@ padding: 60px;
 
 }
 .about{
+    scroll-behavior: smooth;
     width: 100%;
     height: 100vh;
     background-color: lightcoral;  
