@@ -23,3 +23,11 @@ $(document).ready(function(){
     } // End if
   });
 });
+function myFunction() {
+  var x = document.getElementById("nav_options");
+  if (x.className === "nav_options") {
+    x.className += " responsive";
+  } else {
+    x.className = "nav_options";
+  }
+}
