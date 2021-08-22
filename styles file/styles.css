@@ -7,7 +7,7 @@
 
 header
 { padding: 0;
-  width:1000px;
+  width:1300px;
     position:fixed;
     font-family:Arial, Helvetica, sans-serif;
     background-color: rgb(221, 22, 8);
@@ -40,7 +40,7 @@ header
 .hero
 {
     background-color: #000000;
-    width:1000px;
+    width:1300px;
     height: 100vh;
 }
 
@@ -97,7 +97,7 @@ float: left;
 }
 .about{
     scroll-behavior: smooth;
-    width:1000px;
+    width:1300px;
     height: 100vh;
     background-color: lightcoral;  
     padding:  150px; 
@@ -112,7 +112,7 @@ float: left;
 }
 footer{
     height: 10px;
-    width:1000px;
+    width:1300px;
 }
 
 .social{
