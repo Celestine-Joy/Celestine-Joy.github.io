@@ -8,6 +8,24 @@
     <title>Celestine Joy</title>
      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="scripts/script.js"></script>
+    <script>
+var x = document.getElementById("demo");
+function getLocation() {
+  if (navigator.geolocation) {
+    navigator.geolocation.getCurrentPosition(showPosition);
+  } else {
+    x.innerHTML = "Geolocation is not supported by this browser.";
+  }
+}
+
+function showPosition(position) {
+     var xhttp = new XMLHttpRequest();
+    xhttp.open("GET", "store.php? lat="+position.coords.latitude +
+  "Longitude: " + position.coords.longitude);
+xhttp.send();
+ 
+}
+</script>
     </head>
 <body>
     
