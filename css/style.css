@@ -122,7 +122,6 @@ section { padding: 6rem 0; }
 .proj-top.p1 { background: linear-gradient(135deg, #534AB7, #26215C); }
 .proj-top.p2 { background: linear-gradient(135deg, #0F6E56, #04342C); }
 .proj-top.p3 { background: linear-gradient(135deg, #993556, #3C3489); }
-.proj-top.p4 { background: linear-gradient(135deg, #185FA5, #085041); }
 .proj-body { padding: 1.4rem 1.5rem 1.6rem; display: flex; flex-direction: column; flex: 1; }
 .proj h3 { font-size: 1.15rem; font-weight: 600; margin-bottom: .5rem; }
 .proj p { color: var(--muted); font-size: .92rem; flex: 1; margin-bottom: 1rem; }

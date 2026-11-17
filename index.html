@@ -3,6 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' https://fonts.googleapis.com; font-src https://fonts.gstatic.com; img-src 'self' data: https://github.com https://avatars.githubusercontent.com; connect-src 'none'; object-src 'none'; base-uri 'self'; form-action 'none'">
+<meta name="referrer" content="strict-origin-when-cross-origin">
 <title>Celestine Joy | Portfolio</title>
 <meta name="description" content="Celestine Joy: computer science engineer and student at Universidad Carlos III de Madrid, exploring machine learning, AI and network security.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -51,8 +53,12 @@
     </div>
     <div class="avatar-wrap reveal">
       <div class="avatar-ring">
-        <!-- To use your photo: put photo.jpg in this repo and replace <span>CJ</span> with <img src="photo.jpg" alt="Celestine Joy"> -->
-        <div class="avatar"><span>CJ</span></div>
+        <!-- Photo comes from your GitHub profile picture, so it updates whenever you change it there.
+             If it can't load, the "CJ" initials show instead. -->
+        <div class="avatar">
+          <img id="avatarImg" src="https://github.com/Celestine-Joy.png?size=400" alt="Celestine Joy">
+          <span id="avatarInitials" hidden>CJ</span>
+        </div>
       </div>
       <div class="chip c1">🎓 UC3M, Madrid</div>
       <div class="chip c2">🤖 Learning ML &amp; AI</div>
@@ -166,15 +172,6 @@
           <p>A text classification project that identifies inappropriate words and language in text.</p>
           <div class="pills"><span class="pill">Machine Learning</span><span class="pill">NLP</span></div>
           <a class="proj-link" href="https://github.com/Celestine-Joy/inappropriate-words-classification" target="_blank" rel="noopener">View on GitHub &rarr;</a>
-        </div>
-      </div>
-      <div class="proj reveal">
-        <div class="proj-top p4">📓</div>
-        <div class="proj-body">
-          <h3>IBM Notes</h3>
-          <p>Notebooks and exercises from IBM coursework, covering data science and machine learning practice in Jupyter.</p>
-          <div class="pills"><span class="pill">Jupyter</span><span class="pill">Data Science</span></div>
-          <a class="proj-link" href="https://github.com/Celestine-Joy/IBMnotes" target="_blank" rel="noopener">View on GitHub &rarr;</a>
         </div>
       </div>
     </div>

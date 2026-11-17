@@ -25,3 +25,14 @@ menuBtn.addEventListener('click', () => navLinks.classList.toggle('open'));
 navLinks.querySelectorAll('a').forEach(a => a.addEventListener('click', () => navLinks.classList.remove('open')));
 
 document.getElementById('year').textContent = new Date().getFullYear();
+
+// Profile photo: show "CJ" initials if the GitHub picture can't load
+const avatarImg = document.getElementById('avatarImg');
+function showInitials() {
+  avatarImg.remove();
+  document.getElementById('avatarInitials').hidden = false;
+}
+if (avatarImg) {
+  if (avatarImg.complete && avatarImg.naturalWidth === 0) showInitials();
+  else avatarImg.addEventListener('error', showInitials);
+}
