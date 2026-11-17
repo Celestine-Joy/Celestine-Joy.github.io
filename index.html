@@ -1,91 +1,206 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  
-    <link rel="stylesheet" href="styles file/styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Celestine Joy</title>
-     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="scripts/script.js"></script>
-    <script>
-var x = document.getElementById("demo");
-function getLocation() {
-  if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showPosition);
-  } else {
-    x.innerHTML = "Geolocation is not supported by this browser.";
-  }
-}
-
-function showPosition(position) {
-     var xhttp = new XMLHttpRequest();
-    xhttp.open("GET", "store.php?lat="+position.coords.latitude +"&long=" + position.coords.longitude);
-xhttp.send();
- 
-}
-</script>
-    </head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Celestine Joy | Portfolio</title>
+<meta name="description" content="Celestine Joy: computer science engineer and student at Universidad Carlos III de Madrid, exploring machine learning, AI and network security.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+</head>
 <body>
-    
-    <header id="heading">
-            <div class="navbar">
-            <span class="Name"><a href="index.html"> Celestine Joy</a></span>
-            <ul class="nav_options" id="nav_options">
-                <li class="navli"><a href="#Home">Home</a></li>
-                <li class="navli"><a href="#about">About</a></li>
-                <li class="navli"><a href="">Projects</a></li>
-                
-            </ul>
-            <a href="" class="icon" onclick="myFunction()">
-                <i class="fa fa-bars"></i>
-              </a>
-        </div>
-    </header>
-       <section class="hero" id="Home">
-        <div class ="Intro">
-            <div class="container">
-                <div class="intro_msg">
-                    <span class ="welcome_msg" >H</span>
-                    <span class ="welcome_msg" >e</span>
-                    <span class ="welcome_msg" >l</span>
-                    <span class ="welcome_msg" >l</span>
-                    <span class ="welcome_msg" >o</span>   &nbsp;&nbsp;
-                    <span class ="welcome_msg" >T</span>
-                    <span class ="welcome_msg" >h</span>
-                    <span class ="welcome_msg" >e</span>
-                    <span class ="welcome_msg" >r</span>
-                    <span class ="welcome_msg" >e</span>
-                    <span class ="welcome_msg" >.</span>
-                    <span class ="welcome_msg" >.</span>
-                    <span class ="welcome_msg" >.</span>
+<div class="glow one"></div>
+<div class="glow two"></div>
 
-                </div>
-             
-            <div class="intro_to_name">
-                <div class="name_intro">I'm Celestine Joy</div></div>
-            </div> 
-               
-               
-            <div class="intro_image"><a href="https://github.com/Celestine-Joy"><img src="images/octocat.png" class="intro_image1" ></a></div>
- 
+<nav>
+  <div class="container nav-inner">
+    <a href="#home" class="logo">&lt;Celestine<span>/</span>&gt;</a>
+    <ul class="nav-links" id="navLinks">
+      <li><a href="#about">About</a></li>
+      <li><a href="#journey">Journey</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <button class="menu-btn" id="menuBtn" aria-label="Open menu">&#9776;</button>
+  </div>
+</nav>
+
+<!-- HERO -->
+<header class="hero" id="home">
+  <div class="container hero-grid">
+    <div class="reveal">
+      <p class="hello">Hello there, I'm</p>
+      <h1>Celestine <span class="grad">Joy</span></h1>
+      <div class="typing"><span id="typed"></span><span class="cursor"></span></div>
+      <p class="lead">Computer science engineer and student at Universidad Carlos III de Madrid, learning to solve real-world problems with technology, from network security to machine learning.</p>
+      <div class="btns">
+        <a href="#projects" class="btn primary">View my work &rarr;</a>
+        <a href="#contact" class="btn ghost">Get in touch</a>
+      </div>
+      <div class="socials">
+        <a href="https://github.com/Celestine-Joy" target="_blank" rel="noopener" aria-label="GitHub">
+          <svg viewBox="0 0 24 24"><path d="M12 .5C5.65.5.5 5.65.5 12a11.5 11.5 0 0 0 7.86 10.92c.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.36-3.87-1.36-.52-1.33-1.28-1.69-1.28-1.69-1.05-.71.08-.7.08-.7 1.16.08 1.77 1.19 1.77 1.19 1.03 1.77 2.7 1.26 3.36.96.1-.75.4-1.26.73-1.55-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.19-3.09-.12-.29-.52-1.46.11-3.05 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.63 1.59.23 2.76.11 3.05.74.81 1.19 1.83 1.19 3.09 0 4.41-2.69 5.38-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.65 18.35.5 12 .5Z"/></svg>
+        </a>
+        <a href="https://in.linkedin.com/in/celestine-joy" target="_blank" rel="noopener" aria-label="LinkedIn">
+          <svg viewBox="0 0 24 24"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.02-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28ZM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13ZM7.12 20.45H3.56V9h3.56v11.45ZM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0Z"/></svg>
+        </a>
+      </div>
+    </div>
+    <div class="avatar-wrap reveal">
+      <div class="avatar-ring">
+        <!-- To use your photo: put photo.jpg in this repo and replace <span>CJ</span> with <img src="photo.jpg" alt="Celestine Joy"> -->
+        <div class="avatar"><span>CJ</span></div>
+      </div>
+      <div class="chip c1">🎓 UC3M, Madrid</div>
+      <div class="chip c2">🤖 Learning ML &amp; AI</div>
+    </div>
+  </div>
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+  <div class="container">
+    <div class="sec-title reveal"><p class="tag">// get to know me</p><h2>About me</h2><div class="bar"></div></div>
+    <div class="about-grid">
+      <div class="about-text reveal">
+        <p>Hi! I'm <strong>Celestine</strong>, a computer science engineer currently studying at <strong>Universidad Carlos III de Madrid (UC3M)</strong>.</p>
+        <p>I completed my <strong>B.Tech in Computer Science &amp; Engineering</strong> at Sahrdaya College of Engineering and Technology, then worked as an <strong>Associate Test Engineer at EY Global Delivery Services</strong>, where I learned how much care goes into shipping reliable software.</p>
+        <p>These days I'm diving deep into <strong>machine learning and AI</strong>, and I love projects that sit where networks, data and intelligent systems meet. I'm always curious, always learning, and happy to collaborate.</p>
+      </div>
+      <div class="stats reveal">
+        <div class="stat"><div class="num">B.Tech</div><div class="lbl">Computer Science</div></div>
+        <div class="stat"><div class="num">EY</div><div class="lbl">Industry experience</div></div>
+        <div class="stat"><div class="num">10+</div><div class="lbl">GitHub repositories</div></div>
+        <div class="stat"><div class="num">ML</div><div class="lbl">Current focus</div></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- JOURNEY -->
+<section id="journey">
+  <div class="container">
+    <div class="sec-title reveal"><p class="tag">// where I've been</p><h2>My journey</h2><div class="bar"></div></div>
+    <div class="timeline">
+      <div class="t-item now reveal">
+        <p class="t-date">Present</p>
+        <h3>Student</h3>
+        <p class="t-org">Universidad Carlos III de Madrid (UC3M) · Madrid, Spain</p>
+        <p>Continuing my studies in Madrid, with a focus on machine learning, AI and modern computing systems.</p>
+      </div>
+      <div class="t-item reveal">
+        <p class="t-date">Industry</p>
+        <h3>Associate Test Engineer</h3>
+        <p class="t-org">EY Global Delivery Services</p>
+        <p>Tested enterprise software, designed test cases and worked closely with development teams to deliver quality releases.</p>
+      </div>
+      <div class="t-item reveal">
+        <p class="t-date">Undergraduate</p>
+        <h3>B.Tech in Computer Science &amp; Engineering</h3>
+        <p class="t-org">Sahrdaya College of Engineering and Technology</p>
+        <p>Built a strong foundation in programming, networks and data, including projects on network interference detection and traffic flow analysis.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+  <div class="container">
+    <div class="sec-title reveal"><p class="tag">// what I work with</p><h2>Skills</h2><div class="bar"></div></div>
+    <div class="skills-grid">
+      <div class="skill-card reveal">
+        <div class="ico">{ }</div>
+        <h3>Languages</h3>
+        <div class="pills"><span class="pill">Python</span><span class="pill">Java</span><span class="pill">HTML</span><span class="pill">CSS</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="ico">🤖</div>
+        <h3>ML &amp; Data</h3>
+        <div class="pills"><span class="pill">Machine Learning</span><span class="pill">Jupyter Notebook</span><span class="pill">Text Classification</span><span class="pill">Data Analysis</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="ico">🛡️</div>
+        <h3>Networks</h3>
+        <div class="pills"><span class="pill">Network Traffic Analysis</span><span class="pill">CICFlowMeter</span><span class="pill">Interference Detection</span></div>
+      </div>
+      <div class="skill-card reveal">
+        <div class="ico">🧪</div>
+        <h3>Testing &amp; Tools</h3>
+        <div class="pills"><span class="pill">Software Testing</span><span class="pill">Test Case Design</span><span class="pill">Git</span><span class="pill">GitHub</span><span class="pill">VS Code</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+  <div class="container">
+    <div class="sec-title reveal"><p class="tag">// things I've built</p><h2>Featured projects</h2><div class="bar"></div></div>
+    <div class="proj-grid">
+      <div class="proj reveal">
+        <div class="proj-top p1">🛡️</div>
+        <div class="proj-body">
+          <h3>NIDR</h3>
+          <p>Network Interference Detection and Rectification: a Python system that detects interference in network traffic and works to rectify it.</p>
+          <div class="pills"><span class="pill">Python</span><span class="pill">Networking</span></div>
+          <a class="proj-link" href="https://github.com/Celestine-Joy/nidr" target="_blank" rel="noopener">View on GitHub &rarr;</a>
         </div>
-    
-    </section>
-    <section class="about" id="about">
-        <div class="about_page">
-             I am a B.tech student learning to solve the problems of the world with computer technology.
-            <div class="photo"></div>
-            </div>
-    </section>
+      </div>
+      <div class="proj reveal">
+        <div class="proj-top p2">📊</div>
+        <div class="proj-body">
+          <h3>CICFlowMeter Correction</h3>
+          <p>Corrections and improvements to CICFlowMeter, the network traffic flow generator, made to get accurate flow features for a project.</p>
+          <div class="pills"><span class="pill">Python</span><span class="pill">Traffic Analysis</span></div>
+          <a class="proj-link" href="https://github.com/Celestine-Joy/cicflowmeter-correction" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+        </div>
+      </div>
+      <div class="proj reveal">
+        <div class="proj-top p3">🚫</div>
+        <div class="proj-body">
+          <h3>Inappropriate Words Classification</h3>
+          <p>A text classification project that identifies inappropriate words and language in text.</p>
+          <div class="pills"><span class="pill">Machine Learning</span><span class="pill">NLP</span></div>
+          <a class="proj-link" href="https://github.com/Celestine-Joy/inappropriate-words-classification" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+        </div>
+      </div>
+      <div class="proj reveal">
+        <div class="proj-top p4">📓</div>
+        <div class="proj-body">
+          <h3>IBM Notes</h3>
+          <p>Notebooks and exercises from IBM coursework, covering data science and machine learning practice in Jupyter.</p>
+          <div class="pills"><span class="pill">Jupyter</span><span class="pill">Data Science</span></div>
+          <a class="proj-link" href="https://github.com/Celestine-Joy/IBMnotes" target="_blank" rel="noopener">View on GitHub &rarr;</a>
+        </div>
+      </div>
+    </div>
+    <div class="more reveal"><a class="btn ghost" href="https://github.com/Celestine-Joy?tab=repositories" target="_blank" rel="noopener">See all repositories &rarr;</a></div>
+  </div>
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+  <div class="container">
+    <div class="sec-title reveal"><p class="tag">// say hello</p><h2>Let's connect</h2><div class="bar"></div></div>
+    <div class="contact-box reveal">
+      <h3>Open to internships, collaborations and a good tech chat</h3>
+      <p>Whether you have an opportunity, a project idea or just want to talk ML and networks, I'd love to hear from you.</p>
+      <div class="btns">
+        <a class="btn primary" href="https://in.linkedin.com/in/celestine-joy" target="_blank" rel="noopener">Message me on LinkedIn</a>
+        <a class="btn ghost" href="https://github.com/Celestine-Joy" target="_blank" rel="noopener">Follow on GitHub</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <footer>
-        <div class="social">
-            
-                <a href="https://www.linkedin.com/in/celestine-joy-b6092b1b7"><i class="fa fa-linkedin" style="font-size:48px;color:black"></i></a>
-           
-                <a href="https://github.com/Celestine-Joy"><i class="fa fa-github" style="font-size:48px;color:black"></i></a>
-        
-       </div>
+  <div class="container">Designed &amp; built by <span>Celestine Joy</span> · © <span id="year"></span></div>
 </footer>
+
+<script src="js/script.js"></script>
 </body>
 </html>
